@@ -1,3 +1,13 @@
+/*
+ * Projet               : Kit SumoBot 2022
+ * Entité               : Association ESIEESPACE : http://www.esieespace.fr/
+ * Auteurs              : Benjamin LAMBERT
+ *                        Corentin POUPRY
+ * Création             : 10/03/2022
+ * Dernière mise à jour : 19/03/2022
+ * Version              : 5.2.0
+ */
+
 const unsigned char LED_G = 10;
 const unsigned char LED_D = 11;
 

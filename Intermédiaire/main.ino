@@ -3,8 +3,8 @@
  * Entité               : Association ESIEESPACE : http://www.esieespace.fr/
  * Auteurs              : Benjamin LAMBERT
  *                        Corentin POUPRY
- * Création             : 08/03/2022
- * Dernière mise à jour : 08/03/2022
+ * Création             : 10/03/2022
+ * Dernière mise à jour : 19/03/2022
  * Version              : 5.2.0
  * 
  * --------------------------------------------------------------------------------------------------------------------------
@@ -18,37 +18,12 @@
  * --------------------------------------------------------------------------------------------------------------------------
  * 
  * Révision |    Date    | Description
- * 5.2.0    | 08/03/2022 | Création
+ * 5.2.0    | 10/03/2022 | Création
  */
 
 
-const unsigned char LED_G = 10;
-const unsigned char LED_D = 11;
-
-// Ces pins sont utiliser pour la détection en ultrason
-const unsigned char TRIG = 7;  // Assigne la valeur du pin TRIGGER
-const unsigned char ECHO = 6;  // Assigne la valeur du pin ECHO
-
-// Les détecteurs TCRT représentent les détecteurs de ligne blanche
-const unsigned char TCRT_DROIT = A1;   // Assigne la valeur du pin assigner au détecteur droit
-const unsigned char TCRT_GAUCHE = A0;  // Assigne la valeur du pin assigne au détecteur gauche
-
-const unsigned char MOTEUR_G_PWM = 8;      // Assigne la valeur du pin assigner au PWM des moteurs gauches
-const unsigned char MOTEUR_G_DIR_1 = 12;   // Assigne la valeur du pin assigner à la direction 1 des moteurs gauches
-const unsigned char MOTEUR_G_DIR_2 = 13;   // Assigne la valeur du pin assigner à la direction 2 des moteurs gauches
-const unsigned char MOTEUR_D_PWM = 9;      // Assigne la valeur du pin assigner au PWM des moteurs droits
-const unsigned char MOTEUR_D_DIR_1 = A3;   // Assigne la valeur du pin assigner à la direction 1 des moteurs droits
-const unsigned char MOTEUR_D_DIR_2 = A2;   // Assigne la valeur du pin assigner à la direction 2 des moteurs droits
-
-const unsigned char PUSH = 8; // Assigne la valeur du pin assigner au bouton poussoir
-
-const unsigned char MAX_DISTANCE = 100; // La distance maximal avec l'ennemi (en cm)
-
-// La vitesse de charge / d'esquive du robot (varie entre 0 et 255)
-const unsigned char SPEED = 60; // Cette valeur a été choisi car elle permet au robot de fonctionner parfaitement
-
-// La vitesse de rotation du robot (varie entre 0 et 255)
-const unsigned char ROTATION_SPEED = 30; // Une vitesse de rotation plus élevé est déconseiller car cela rend la ddétection moins fiable
+#include<pins.h>
+#include<config.h>
 
 
 /*
